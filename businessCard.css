@@ -1,0 +1,49 @@
+body{
+    margin: 20px;
+    font-family: cursive;
+}
+
+.myPhoto{
+    width: 150px;
+    height: 210px;
+}
+
+.card{
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    color: #2b2839;
+    background-color: #b9faf8;
+    border-bottom: 15px solid #b298dc;
+    border-radius: 2%;
+    box-shadow: 5px 5px 3px 2px #aaaa;
+}
+
+.my-button{
+    color: #2b2839;
+    cursor: pointer;
+    /* Adds a smooth transition effect over 0.3 seconds */
+    transition: color 0.3s ease; 
+}
+
+.my-button:hover{
+    color: darkorchid; /* New background color on hover */
+}
+
+.animation{
+  animation-duration: 3s;
+  animation-name: slide-in;
+  /* Shorthand equivalent: animation: slide-in 3s; */
+}
+
+@keyframes slide-in {
+  from {
+    translate: 20px 0; /* Starts off-screen to the right */
+  }
+  to {
+    translate: 0 0; /* Ends in its default position */
+  }
+}
